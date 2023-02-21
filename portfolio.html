@@ -291,7 +291,7 @@
     </main>
     <!--------- FOOTER---- -->
     <footer class="footer-container">
-      <div class="container footer-soc-container">
+      <section class="container footer-soc-container">
         <div>
           <a class="logo" href="./index.html"
             ><span class="logo-web">Web</span
@@ -304,7 +304,7 @@
         </div>
 
         <div class="footer-soc-section">
-          <h2 class="footer-suptitle">Social media</h2>
+          <p class="footer-suptitle">Social media</p>
           <ul class="list command-soc-list">
             <li class="list command-soc-item soc-icon-bg">
               <a class="link command-soc-link" href="">
@@ -336,7 +336,26 @@
             </li>
           </ul>
         </div>
-      </div>
+        <!----INPUT FOOTER--------->
+        <div class="footer-subscribe">
+          <p class="footer-suptitle">Subscribe</p>
+          <form class="footer-form">
+            <input
+              type="email"
+              name="user_email"
+              required
+              class="footer-form-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-btn">
+              Subscribe
+              <svg class="footer-close-btn-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -20,6 +20,7 @@ body {
   background-color: #ffffff;
   font-family: var(--primary-font);
   line-height: 1.5;
+  letter-spacing: 0.02em;
   font-size: var(primary-font-size);
 }
 
@@ -76,7 +77,6 @@ img {
   font-family: inherit;
   font-weight: 500;
   font-size: var(--primary-font-size);
-  line-height: 1.5;
   text-decoration: none;
 
   display: flex;
@@ -105,7 +105,6 @@ img {
 }
 
 .link-contact {
-  letter-spacing: 0.02em;
   color: #434455;
 }
 
@@ -140,7 +139,6 @@ img {
 .list-nav {
   font-weight: 500;
   font-size: var(--primary-font-size);
-  letter-spacing: 0.02em;
 
   display: flex;
   margin-left: 76px;
@@ -158,7 +156,7 @@ img {
   width: 100%;
   height: 4px;
   left: 0px;
-  bottom: 0px;
+  bottom: -2px;
   position: absolute;
   background: #404bbf;
   border-radius: 2px;
@@ -187,7 +185,6 @@ img {
 .main-title {
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   color: #ffffff;
   margin: auto;
 
@@ -211,7 +208,6 @@ img {
 }
 
 /*============================/MAIN SECTION===========*/
-
 /*============================BTN-PORTFOLIO===========*/
 .btn-menu {
   text-align: center;
@@ -247,22 +243,19 @@ img {
   padding-bottom: 72px;
 }
 /*============================BTN-PORTFOLIO===========*/
-
 /*============================ADVANTAGE===========*/
 
 .advantage-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--accent-color);
 
   margin-bottom: 8px;
   margin-top: 8px;
 }
 
 .advantage-text {
-  letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 8px;
 }
@@ -301,10 +294,8 @@ img {
 /*============================ABOUT US===========*/
 
 .main-suptitle {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 72px;
@@ -365,8 +356,6 @@ img {
   background: #4d5ae5;
 
   font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
   padding-left: 32px;
   padding-right: 32px;
@@ -448,7 +437,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
 
@@ -514,8 +502,6 @@ footer {
 }
 
 .footer-suptitle {
-  font-size: 16px;
-  letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
@@ -535,6 +521,59 @@ footer {
 
 .soc-icon-bg > .command-soc-link:is(:hover, :focus) {
   background-color: #31d0aa;
+}
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+/*============================INPUT===========*/
+.footer-form-btn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-left: 24px;
+  align-items: center;
+  height: 40px;
+  color: #ffffff;
+  background: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  transition: var(--transition-duration-function);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  background: #2e2f42;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 8px 0px 8px 16px;
+  transition: var(--transition-duration-function);
+}
+
+.footer-close-btn-icon {
+  margin-left: 16px;
+}
+
+.footer-form {
+  display: flex;
 }
 /*============================/FOOTER===========*/
 /*============================MODAL WINDOW===========*/
@@ -606,3 +645,142 @@ footer {
   fill: #ffffff;
 }
 /*============================/MODAL WINDOW===========*/
+/*============================MODAL INPUT===========*/
+.input-desc {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-field {
+  margin-bottom: 8px;
+}
+
+.modal-form-input-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 38px;
+  transition: var(--transition-duration-function);
+}
+
+.modal-form-input:focus,
+.modal-form-message:focus,
+.footer-form-input:focus {
+  border-color: rgba(77, 90, 229, 1);
+  outline: none;
+}
+
+.modal-form-input:focus + .modal-input-icon {
+  fill: rgba(77, 90, 229, 1);
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  color: black;
+  resize: none;
+  padding: 8px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: var(--transition-duration-function);
+}
+
+.modal-form-message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #757575;
+  margin-bottom: 24px;
+}
+
+.modal-form-check-desc::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #404bbf;
+  border-radius: 2px;
+  content: '';
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.modal-form-submit {
+  cursor: pointer;
+  transition: var(--transition-duration-function);
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  display: block;
+  transition: var(--transition-duration-function);
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: #404bbf;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.modal-form-submit {
+  color: #ffffff;
+  background: #4d5ae5;
+  padding: 16px 32px;
+  border: none;
+  margin: auto;
+  width: 169px;
+  border-radius: 4px;
+  transition: var(--transition-duration-function);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.policy-privacy {
+  text-decoration: underline;
+  color: rgba(77, 90, 229, 1);
+}
+
+/*============================MODAL INPUT===========*/
