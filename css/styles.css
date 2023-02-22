@@ -612,6 +612,7 @@ footer {
 }
 
 .modal-close-btn {
+  position: relative;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -651,7 +652,7 @@ footer {
   font-size: 16px;
   text-align: center;
   color: #2e2f42;
-  padding-top: 24px;
+  margin-top: 24px;
   margin-bottom: 16px;
 }
 
